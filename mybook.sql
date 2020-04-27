@@ -36,8 +36,8 @@ CREATE TABLE IF NOT EXISTS `Profile` (
  );
 
  -- Post (post_ID, user_ID text_post, img_post, date, time)
-CREATE TABLE IF NOT EXISTS `Post` (
-  `post_id ` int(10) NOT NULL,
+CREATE TABLE IF NOT EXISTS `Post`(
+  `post_id` int(10) NOT NULL,
   `user_id` int(10) NOT NULL,
   `text_post` varchar(50) DEFAULT NULL,
   `img_post` text,
