@@ -1,20 +1,4 @@
-/*COMMAND TO CONNECT TO RUNNING SERVER: mysql -u root -p
-COMMAND TO EXECUTE SQL SCRIPT: \. <path to file>
-                               eg. \. /home/kevin/c.sql
-COMMAND TO LIST/SHOW DATABASES:  show databases;
-COMMAND TO CREATE DATABASE WITH NAME mclass: create database mclass;
-COMMAND TO SElECT/USE THE DATABASE mclass: use mclass;
-COMMAND TO SHOW/LIST TABLES IN DATABASE: show tables;
-*/
-/*COMMAND TO CONNECT TO RUNNING SERVER: mysql -u root -p
-COMMAND TO EXECUTE SQL SCRIPT: \. <path to file>
-                               eg. \. /home/kevin/c.sql
-COMMAND TO LIST/SHOW DATABASES:  show databases;
-COMMAND TO CREATE DATABASE WITH NAME mclass: create database mclass;
-COMMAND TO SElECT/USE THE DATABASE mclass: use mclass;
-COMMAND TO SHOW/LIST TABLES IN DATABASE: show tables;
-*/
-
+--Group Assignment
 -- User (user_ID, fname, lname, user_name, pwd, email)
 CREATE TABLE IF NOT EXISTS `User`(
   `user_id` int(10) NOT NULL,
