@@ -4,9 +4,9 @@ CREATE TABLE IF NOT EXISTS `User`(
   `user_id` int(10) NOT NULL,
   `fname` varchar(30) DEFAULT NULL,
   `lname` varchar(30) DEFAULT NULL,
-  `username` varchar(30) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,
   `pwd` varchar(30) DEFAULT NULL,
+  `datejoined` DATE,
   PRIMARY KEY(`user_ID`)
  );
 
