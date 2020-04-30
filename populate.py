@@ -9,7 +9,7 @@ random_names = Faker()
 date = datetime.now()
 mydb_connection = mysql.connector.connect(host="localhost",
                                           user="root",
-                                          password=" ",
+                                          password="",
                                           database="mybook"
                                           # auth_plugin="mysql_native_password"
                                           )

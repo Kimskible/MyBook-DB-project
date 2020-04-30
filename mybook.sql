@@ -1,7 +1,7 @@
 --Group Assignment
 -- User (user_ID, fname, lname, user_name, pwd, email)
 CREATE TABLE IF NOT EXISTS `User`(
-  `user_id` int(10) NOT NULL,
+  `user_id` int(10) NOT NULL AUTO_INCREMENT,
   `fname` varchar(30) DEFAULT NULL,
   `lname` varchar(30) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,
