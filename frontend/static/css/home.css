@@ -25,25 +25,3 @@ body {
             content: none;
             display: none;
         }
-
-.layout{
-
-  display: flex;
-}
-
-.left{
-
-}
-
-.right{
-  /* background-color: red; */
-  width:70%
-}
-
-.info{
-  font-weight: 900;
-}
-
-.heading{
-  font-size: 80%;
-}
