@@ -1,57 +1,81 @@
 {% extends "base.html" %}
-{%block title %} Home Page {%endblock%}
+{%block title %} MYBOOK {%endblock%}
 
-    {%block content%}
-    <nav class="navbar navbar">
-      <a class="navbar-brand">MyBook</a>
+    {%block main%}
+    <!--Login Form-->
+    <nav class="navbar ">
+      <a class="navbar-brand  mb-0 h1 heading">MyBook</a>
       <form>
         <div class="form-row">
           <div class="col">
-            <input type="text" class="form-control" placeholder="First name">
+            <input type="text" class="form-control" placeholder=" Email ">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Last name">
+            <input type="text" class="form-control" placeholder=" Password ">
           </div>
           <div class="col">
-            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-info">Login</button>
           </div>
-    
         </div>
       </form>
     </nav>
 
-    <form>
-      <div class="form-row">
-        <div class="col-md-4 mb-3">
-          <label for="validationServer01">First name</label>
-          <input type="text" class="form-control">
+    <div class="">
+      <!--Info side of page-->
+      <secton class="">
+        <div class="">
+          <h3> Connecting to friends and family just got easy!</h3>
         </div>
 
-        <div class="col-md-4 mb-3">
-          <label for="validationServer02">Last name</label>
-          <input type="text" class="form-control">
-         </div>
+      </secton>
 
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
-          <label for="validationServer01"> Email </label>
-          <input type="text" class="form-control">
+      <!--Registration side of page-->
+    <section class="">
+       <form class="form-horizontal">
+      <fieldset>
+        <!-- Form Name -->
+        <legend class="col-md-4">Register Below!</legend>
+        <!-- Text Input for registration-->
+        <div class="form-group">
+          <div class="col-md-4">
+            <input id="fname" name="fname" type="text" placeholder="First Name" class="form-control input-md" required="">
+          </div>
         </div>
-
-        <div class="form-row">
-          <div class="col-md-4 mb-3">
-            <label for="validationServer01"> Password </label>
-            <input type="text" class="form-control">
+        <!--Last name input-->
+        <div class="form-group ">
+          <div class="col-md-4">
+            <input id="fname" name="fname" type="text" placeholder="Last Name" class="form-control input-md" required="">
           </div>
-
-          <div class="form-row">
-            <div class="col-md-4 mb-3">
-              <label for="validationServer01"> Confirm Password </label>
-              <input type="text" class="form-control">
-              </div>
+        </div>
+            <!-- Text input for email and password-->
+        <div class="form-group">
+          <div class="col-md-4">
+            <input id="email" name="email" type="text" placeholder="Email " class="form-control input-md" required="">
           </div>
-      
-      <button class="btn btn-primary" type="submit">Sign Up!</button>
-    </form>
+        </div>
+        <!-- Password input-->
+        <div class="form-group">
+          <div class="col-md-4">
+            <input id="password" name="password" type="password" placeholder="Password " class="form-control input-md" required="">
+          </div>
+        </div>
+        <!-- Password input-->
+        <div class="form-group">
+          <div class="col-md-4">
+            <input id="password" name="password" type="password" placeholder="Confirm Password" class="form-control input-md" required="">
+          </div>
+        </div>
+        <!-- Button (Double) -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="save"></label>
+          <div class="col-md-8">
+            <button id="save" name="save" class="btn btn-info">Sign up!</button>
+          </div>
+        </div>
+    
+      </fieldset>
+       </form>
+    </section>
+    </div>
 
     {%endblock%}
