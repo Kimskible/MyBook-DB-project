@@ -5,16 +5,17 @@
     <!--Login Form-->
     <nav class="navbar ">
       <a class="navbar-brand  mb-0 h1 heading">MyBook</a>
-      <form>
+      <form action="{{url_for('login')}}" method="POST">
+
         <div class="form-row">
           <div class="col">
-            <input type="text" class="form-control" placeholder=" Email ">
+            <input type="email" name="email" class="form-control" placeholder=" Email ">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder=" Password ">
+            <input type="password" name="password" class="form-control" placeholder=" Password ">
           </div>
           <div class="col">
-            <button type="button" class="btn btn-info">Login</button>
+            <button type="submit" class="btn btn-info">Login</button>
           </div>
         </div>
       </form>
@@ -23,7 +24,7 @@
     <div class="">
       <!--Info side of page-->
       <secton class="">
-        <div class="">
+        <div class="col-md-4">
           <h3> Connecting to friends and family just got easy!</h3>
         </div>
 
