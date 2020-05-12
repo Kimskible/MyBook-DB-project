@@ -54,6 +54,8 @@ def login():
     return render_template('main.html', error = error)
 
 
+
+
 @app.route('/profile/')
 def profile():
   return render_template('profile.html')
@@ -62,21 +64,6 @@ def profile():
 @app.route('/groups/')
 def groups():
   return render_template('groups.html')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
