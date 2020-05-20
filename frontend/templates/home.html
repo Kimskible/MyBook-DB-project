@@ -23,6 +23,9 @@
     <div class="col-md-3">
       <div class="card">
         <div class="card-body">
+          <form method="POST" action="{{url_for('profile')}}">
+            <input type="submit" class="profile-edit-btn" name="btnAddMore" value="View Profile" />
+          </form>
           <div class="h5">@LeeCross</div>
           <div class="h7 text-muted">Fullname : Miracles Lee Cross</div>
           <div class="h7">Developer of web applications, JavaScript, PHP, Java, Python, Ruby, Java, Node.js,

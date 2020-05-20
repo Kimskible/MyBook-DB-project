@@ -32,7 +32,7 @@
 
       <!--Registration side of page-->
     <section class="">
-       <form class="form-horizontal" method="POST">
+       <form class="form-horizontal" method="POST" action="{{url_for('register')}}">
       <fieldset>
         <!-- Form Name -->
         <legend class="col-md-4">Register Below!</legend>
@@ -45,7 +45,7 @@
         <!--Last name input-->
         <div class="form-group ">
           <div class="col-md-4">
-            <input id="fname" name="lname" type="text" placeholder="Last Name" class="form-control input-md" required="">
+            <input id="lname" name="lname" type="text" placeholder="Last Name" class="form-control input-md" required="">
           </div>
         </div>
             <!-- Text input for email and password-->
@@ -63,13 +63,14 @@
         <!-- Password input-->
         <div class="form-group">
           <div class="col-md-4">
-            <input id="password" name="password_" type="password" placeholder="Confirm Password" class="form-control input-md" required="">
+            <input id="con_pass" name="con_pass" type="password" placeholder="Confirm Password" class="form-control input-md" required="">
           </div>
         </div>
         <!-- Button (Double) -->
         <div class="form-group">
           <label class="col-md-4 control-label" for="save"></label>
           <div class="col-md-8">
+
             <button id="save" name="save" class="btn btn-info">Sign up!</button>
           </div>
         </div>
