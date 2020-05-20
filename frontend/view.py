@@ -59,7 +59,6 @@ def login():
         session['lname'] = record[0][2]
         session['email'] = record[0][3]
 
-
         return redirect(url_for('home'))     
     return render_template('main.html', error = error)
 
